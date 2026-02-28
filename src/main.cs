@@ -10,7 +10,14 @@ class Program
             {
                 break;
             }
-            Console.WriteLine(arg + ":" + " command not found");
+            else if (arg == "echo")
+            {
+                Console.WriteLine(arg.Substring(3));
+            }
+            else
+            {
+                Console.WriteLine(arg + ":" + " command not found");    
+            }
         }
     }
 }
