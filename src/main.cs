@@ -1,9 +1,9 @@
 class Program
 {
-    static void Main(string arg)
+    static void Main(string[] args)
     {
         Console.Write("$ ");
-        Console.WriteLine(arg + ":" + " command not found");
+        Console.WriteLine(args + ":" + " command not found");
         
     }
 }
