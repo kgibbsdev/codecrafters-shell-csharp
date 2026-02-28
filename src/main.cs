@@ -14,6 +14,20 @@ class Program
             {
                 Console.WriteLine(arg.Substring(5));
             }
+            else if (arg.StartsWith("type"))
+            {
+                string commandTarget = arg.Substring(5);
+                switch (commandTarget)
+                {
+                    case "echo":
+                    case "exit":
+                        Console.WriteLine($"{commandTarget} is a shell builtin");
+                        break;
+                    default:
+                        Console.WriteLine(commandTarget + ":" + " command not found");
+                        break;
+                }
+            }
             else
             {
                 Console.WriteLine(arg + ":" + " command not found");    
