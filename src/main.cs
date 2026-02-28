@@ -25,7 +25,7 @@ class Program
                         Console.WriteLine($"{commandTarget} is a shell builtin");
                         break;
                     default:
-                        Console.WriteLine(commandTarget + ":" + " command not found");
+                        Console.WriteLine(commandTarget + ":" + " not found");
                         break;
                 }
             }
