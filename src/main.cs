@@ -21,6 +21,7 @@ class Program
                 {
                     case "echo":
                     case "exit":
+                    case "type":
                         Console.WriteLine($"{commandTarget} is a shell builtin");
                         break;
                     default:
