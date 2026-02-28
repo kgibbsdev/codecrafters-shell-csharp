@@ -10,9 +10,9 @@ class Program
             {
                 break;
             }
-            else if (arg == "echo")
+            else if (arg.StartsWith("echo"))
             {
-                Console.WriteLine(arg.Substring(3));
+                Console.WriteLine(arg.Substring(5));
             }
             else
             {
