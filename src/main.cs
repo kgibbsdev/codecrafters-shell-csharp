@@ -4,7 +4,7 @@ class Program
     {
         Console.Write("$ ");
         string arg = Console.ReadLine();
-        Console.WriteLine(arg + ":" + " command not found.");
+        Console.WriteLine(arg + ":" + " command not found");
 
     }
 }
