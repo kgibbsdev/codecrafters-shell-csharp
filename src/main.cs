@@ -1,9 +1,10 @@
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         Console.Write("$ ");
-        Console.WriteLine(args + ":" + " command not found");
-        
+        string arg = Console.ReadLine();
+        Console.WriteLine(arg + ":" + " command not found.");
+
     }
 }
